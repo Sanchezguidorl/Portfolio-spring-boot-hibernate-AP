@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class EstudioService implements InterfaceEstudioService {
-    //Se inserta como dependencia la entidad Proyecto por medio de su interface Repository
+    //Se inserta como dependencia la entidad Estudio por medio de su interface Repository
 
     @Autowired
     private EstudioRepository estudiosRepo;

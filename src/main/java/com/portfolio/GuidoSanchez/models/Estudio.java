@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.portfolio.GuidoSanchez.models;
 
 import jakarta.persistence.Entity;
@@ -22,6 +19,8 @@ public class Estudio {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
     private String nombre_institucion;
+    private String nombre_curso;
+    private String url_logo;
     private String fecha_inicio;
     private String estado_cursado;
 }

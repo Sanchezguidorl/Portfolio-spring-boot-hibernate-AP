@@ -1,7 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
- */
+
+ 
 package com.portfolio.GuidoSanchez.interfaces;
 
 import com.portfolio.GuidoSanchez.models.Usuario;
@@ -13,8 +11,8 @@ public interface InterfaceUsuarioService {
 
     public void save(Usuario usuario);
 
-    public void deleteUsuario(Long id);
+    public void deleteUsuario(Integer id);
     
-    public Usuario edit(Long id);
+    public Usuario edit(Integer id);
 
 }

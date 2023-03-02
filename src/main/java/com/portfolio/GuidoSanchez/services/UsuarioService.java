@@ -1,7 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
+
 package com.portfolio.GuidoSanchez.services;
 
 import com.portfolio.GuidoSanchez.models.Usuario;
@@ -13,7 +11,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class UsuarioService implements InterfaceUsuarioService {
-//Se inserta como dependencia la entidad Persona por medio de su interface Repository
+//Se inserta como dependencia la entidad Usuario por medio de su interface Repository
 
     @Autowired
     private UsuarioRepository usuarioRepo;
@@ -32,13 +30,13 @@ public class UsuarioService implements InterfaceUsuarioService {
 
     //Elimina un registro segun Id
     @Override
-    public void deleteUsuario(Long id) {
+    public void deleteUsuario(Integer id) {
         usuarioRepo.deleteById(id);
     }
 
     //Busca un registro segun Id
     @Override
-    public Usuario edit(Long id) {
+    public Usuario edit(Integer id) {
         return usuarioRepo.findById(id).orElse(null);
     }
 }
