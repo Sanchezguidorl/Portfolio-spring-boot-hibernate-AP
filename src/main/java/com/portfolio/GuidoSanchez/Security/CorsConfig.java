@@ -21,7 +21,7 @@ public class CorsConfig {
            public void addCorsMappings(CorsRegistry registry){
                registry.addMapping("/login")
                        .allowedOrigins("https://portfolio-guidosanz-1b8af.web.app/")
-                       .allowedMethods("*")
+                       .allowedMethods("POST")
                        .exposedHeaders("*");
                
                registry.addMapping("/api/**")
