@@ -23,7 +23,8 @@ public class CorsConfig {
                        .allowedOrigins("*")
                        .allowedMethods("*")
                        .allowedHeaders("*")
-                       .exposedHeaders("*");
+                       .exposedHeaders("*")
+                       .allowCredentials(true);
                
                registry.addMapping("/api/**")
                        .allowedOrigins("*")
