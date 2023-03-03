@@ -19,7 +19,6 @@ com\portfolio\GuidoSanchez\models\Usuario.class
 com\portfolio\GuidoSanchez\Security\TokenUtilsre.class
 com\portfolio\GuidoSanchez\services\EstudioService.class
 com\portfolio\GuidoSanchez\Security\JWTAuthorizationFilter.class
-com\portfolio\GuidoSanchez\Security\CorsConfig$1.class
 com\portfolio\GuidoSanchez\repositories\ProyectoRepository.class
 com\portfolio\GuidoSanchez\models\Estudio.class
 com\portfolio\GuidoSanchez\Security\WebSecurityConfig.class
