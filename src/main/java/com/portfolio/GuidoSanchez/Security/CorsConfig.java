@@ -21,7 +21,7 @@ public class CorsConfig {
            public void addCorsMappings(CorsRegistry registry){
                registry.addMapping("/login")
                        .allowedOrigins("*")
-                       .allowedMethods("POST")
+                       .allowedMethods("*")
                        .allowedHeaders("*")
                        .exposedHeaders("*");
                
