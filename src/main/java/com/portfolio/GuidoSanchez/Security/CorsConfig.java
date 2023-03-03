@@ -20,8 +20,8 @@ public class CorsConfig {
            @Override
            public void addCorsMappings(CorsRegistry registry){
                registry.addMapping("/login")
-                       .allowedOrigins("*")
-                       .allowedMethods("POST")
+                       .allowedOrigins("https://portfolio-guidosanz-1b8af.web.app/")
+                       .allowedMethods("*")
                        .exposedHeaders("*");
                
                registry.addMapping("/api/**")
