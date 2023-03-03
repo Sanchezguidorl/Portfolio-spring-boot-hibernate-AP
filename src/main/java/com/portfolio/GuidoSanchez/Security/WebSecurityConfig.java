@@ -33,8 +33,6 @@ public class WebSecurityConfig {
                 .csrf().disable()
                 .authorizeHttpRequests()
                 .requestMatchers(HttpMethod.GET, "/api/**").permitAll()
-                .requestMatchers(HttpMethod.POST, "/login").permitAll()
-                .requestMatchers(HttpMethod.OPTIONS, "/login").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
