@@ -16,7 +16,7 @@ public class CorsConfig implements WebMvcConfigurer{
             public void addCorsMappings(CorsRegistry registry){
         registry.addMapping("/login")
             .allowedOrigins("https://portfolio-guidosanz-1b8af.web.app")
-            .allowedMethods("GET", "POST")
+            .allowedMethods("*")
             .allowedHeaders("*")
             .exposedHeaders("Access-Control-Allow-Origin","Authorization");
                
