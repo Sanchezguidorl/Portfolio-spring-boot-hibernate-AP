@@ -21,7 +21,7 @@ public class CorsConfig {
                         .exposedHeaders("Access-Control-Allow-Origin", "Authorization");
 
                 registry.addMapping("/api/**")
-                        .allowedOrigins("https://portfolio-guidosanz-1b8af.web.app/")
+                        .allowedOrigins("*")
                         .allowedMethods("*");
 
             }
