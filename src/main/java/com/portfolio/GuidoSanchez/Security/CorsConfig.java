@@ -15,13 +15,13 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/login")
-                        .allowedOrigins("*")
+                        .allowedOrigins("https://portfolio-guidosanz-1b8af.web.app/")
                         .allowedMethods("OPTIONS", "POST")
                         .allowedHeaders("*")
                         .exposedHeaders("Access-Control-Allow-Origin", "Authorization");
 
                 registry.addMapping("/api/**")
-                        .allowedOrigins("*")
+                        .allowedOrigins("https://portfolio-guidosanz-1b8af.web.app/")
                         .allowedMethods("*");
 
             }
