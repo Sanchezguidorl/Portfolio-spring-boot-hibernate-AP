@@ -11,7 +11,7 @@ public class CorsConfig implements WebMvcConfigurer{
     
     
 //configuración de cors
-    
+
            @Override
             public void addCorsMappings(CorsRegistry registry){
         registry.addMapping("/login")
